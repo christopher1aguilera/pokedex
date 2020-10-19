@@ -22,7 +22,7 @@ $(document).ready(function(){
             //grafica
             var options = {
                 animationEnabled: true,
-                theme: "light1",
+                theme: "light2",
                 title: {
                     text: "stats base"
                 },
