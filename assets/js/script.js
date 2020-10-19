@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $("body").css({"background-image": "url(https://ae01.alicdn.com/kf/H10f804964d65445da3fc0750e2a7d00fy/Takara-Tomy-Bola-de-elfo-para-mascotas-pikachu-pokebola-de-Pikachu-de-7cm-bolas-Pop-up.jpg_q50.jpg)", "background-repeat": "no-repeat",  "background-size": "100% 700px"});
+    $(".imagenes").css({"background-color": "white", "background-size": "auto"});
+    $(".numero").css({"background-color": "white", "background-size": "10px 10px"});
     //funcion de boton
     let consultar = $("#consultar")
     consultar.on("click", function () {
@@ -10,7 +13,7 @@ $(document).ready(function(){
             $("img").click(function(){
                 var img = $("img");
                 img.animate({height: '400px', width: '400px'});
-                $("#nombre").css({"text-align": "center"});
+                $("#nombre").css({"text-align": "center", "background-color": "white"});
                 $("#peso").css({"text-align": "center"});
             });
             //animacion al mostrar contenido del pokemon
