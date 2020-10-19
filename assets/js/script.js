@@ -4,7 +4,7 @@ $(document).ready(function(){
     consultar.on("click", function () {
         //almacenar numero ingresado
         let num1 = $("#pokemon").val()
-        //validando el numero ingresado sea enterp
+        //validando el numero ingresado sea entero, entre el 1 y 807
         if ((1 <= num1) && (num1 <= 807) && ((num1 % 1) == 0)) {
             //animacion agrandar la imagen del pokemon
             $("img").click(function(){
@@ -80,7 +80,7 @@ $(document).ready(function(){
                     $("#chartContainer").CanvasJSChart(options);
                     },
                 error: function(error) {
-                console.log(error)
+                    console.log(error)
                 }
             });
         }
